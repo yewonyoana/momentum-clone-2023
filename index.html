@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ghibli Momentum</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<section class="hidden" id="login">
+			<form id="login-form">
+				<span>
+					あぁ,
+					<input type="text" placeholder="이름" maxlength="7" required />
+					さん...
+				</span>
+			</form>
+		</section>
+
+		<main class="hidden" id="front-page">
+			<h1 id="greeting"></h1>
+
+			<div id="date-time">
+				<span id="date"></span>
+				<span id="clock"></span>
+			</div>
+
+			<div id="weather">
+				<span></span>
+				<span></span>
+			</div>
+
+			<div id="container">
+				<div id="todo">
+					<h2>오늘의 할 일</h2>
+					<form id="todo-form">
+						<input type="text" placeholder="적어주세요" required />
+					</form>
+					<ul id="todo-list"></ul>
+				</div>
+
+				<div id="pomodoro">
+					<h2>집중 시간</h2>
+					<div id="pomodoro-timer">
+						<div class="pomodoro-labels">
+							<span id="work">시간</span>
+							<span id="cycle">횟수</span>
+							<span id="break">휴식</span>
+						</div>
+						<div class="pomodoro-time">
+							<div id="work-timer">
+								<span id="w_minutes">25</span>
+								<span class="semicolon">:</span>
+								<span id="w_seconds">00</span>
+							</div>
+							<span id="counter">0</span>
+							<div id="break-timer">
+								<span id="b_minutes">05</span>
+								<span class="semicolon">:</span>
+								<span id="b_seconds">00</span>
+							</div>
+						</div>
+						<div class="pomodoro-btns">
+							<button id="start"><i class="fas fa-play fa-lg"></i></button>
+							<button id="stop"><i class="fas fa-pause fa-lg"></i></button>
+							<button id="reset"><i class="fas fa-redo fa-lg"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="netflix">
+				<a href="https://www.netflix.com/browse/genre/81227213" target="_blank"
+					><img src="imgs/17.png" alt="Ghibli Logo" class="netflix-img"
+				/></a>
+			</div>
+
+			<div id="quote">
+				<span></span>
+				<span></span>
+			</div>
+
+			<div id="logout">
+				<span><i class="fas fa-hand-sparkles"></i></span>
+				<span class="logout-bye">また</span>
+				<span class="logout-bye">あした!</span>
+			</div>
+		</main>
+
+		<script
+			src="https://kit.fontawesome.com/6478f529f2.js"
+			crossorigin="anonymous"></script>
+		<script src="js/greeting.js"></script>
+		<script src="js/clock.js"></script>
+		<script src="js/date.js"></script>
+		<script src="js/quotes.js"></script>
+		<script src="js/background.js"></script>
+		<script src="js/todo.js"></script>
+		<script src="js/weather.js"></script>
+		<script src="js/pomodoro.js"></script>
+		<script src="js/logout.js"></script>
+	</body>
+</html>

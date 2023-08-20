@@ -1,0 +1,14 @@
+.netflix-img {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	object-fit: cover;
+	opacity: 0.5;
+}
+
+.netflix-img:hover {
+	cursor: pointer;
+	text-shadow: var(--btnshadow);
+	transform: scale(1.2);
+	opacity: 1;
+}

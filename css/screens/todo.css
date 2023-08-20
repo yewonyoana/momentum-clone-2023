@@ -1,0 +1,56 @@
+#todo {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 500px;
+}
+
+#todo h2 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	text-shadow: var(--textshadow);
+}
+
+#todo-form,
+#todo-list {
+	margin-top: 10px;
+	font-family: "Gaegu", cursive, "Kiwi Maru", serif;
+	font-size: 1.5rem;
+}
+
+#todo-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 300px;
+}
+
+#todo-form input {
+	font-family: "Gaegu", cursive, "Kiwi Maru", serif;
+	font-size: 1.5rem;
+	color: white;
+	padding-top: 5px;
+	text-align: center;
+}
+
+#todo input::placeholder {
+	font-family: "Gaegu", cursive, "Kiwi Maru", serif;
+	font-size: 1.5rem;
+	color: white;
+	opacity: 0.5;
+}
+
+#todo-list li {
+	margin: 5px;
+}
+
+#todo-list li button {
+	opacity: 0.5;
+}
+
+#todo-list li button:hover {
+	cursor: pointer;
+	text-shadow: var(--btnshadow);
+	transform: scale(1.2);
+	opacity: 1;
+}

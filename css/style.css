@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Gaegu:wght@300;400;700&family=Kiwi+Maru:wght@300;400&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+@import "screens/greetings.css";
+@import "screens/logout.css";
+@import "screens/date-time-weather-quotes.css";
+@import "screens/todo.css";
+@import "screens/pomodoro.css";
+@import "screens/netflix.css";
+
+body {
+	font-family: "Gaegu", cursive, "Kiwi Maru", serif;
+	font-size: 1.5rem;
+	color: white;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 90%;
+	height: 85%;
+	border-radius: 30px;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.hidden {
+	display: none;
+}

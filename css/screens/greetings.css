@@ -1,0 +1,32 @@
+section {
+	background: url("/imgs/18.jpeg") center / cover;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#login-form span,
+#greeting {
+	font-family: "Gaegu", cursive, "Cherry Bomb One", cursive;
+	font-size: 5rem;
+	text-shadow: var(--textshadow);
+	text-align: center;
+}
+
+#login-form input {
+	width: 250px;
+	font-family: "Gaegu", cursive, "Cherry Bomb One", cursive;
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+	text-shadow: var(--textshadow);
+}
+
+#login-form input::placeholder {
+	color: white;
+	opacity: 0.5;
+	font-size: 3rem;
+	text-align: center;
+}

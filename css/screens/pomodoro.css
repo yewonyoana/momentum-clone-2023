@@ -1,0 +1,56 @@
+#pomodoro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 500px;
+}
+
+#pomodoro h2 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	text-shadow: var(--textshadow);
+	margin-bottom: 15px;
+}
+
+#pomodoro-timer {
+	margin: 10px auto 0px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#work,
+#cycle,
+#work-timer,
+#counter {
+	margin-right: 50px;
+}
+
+#stop {
+	margin: 0px 60px;
+}
+
+.pomodoro-labels,
+.pomodoro-time,
+.pomodoro-btns {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.pomodoro-labels,
+.pomodoro-btns i {
+	opacity: 0.5;
+}
+
+.pomodoro-time {
+	text-shadow: var(--btnshadow);
+}
+
+.pomodoro-btns i:hover {
+	cursor: pointer;
+	text-shadow: var(--btnshadow);
+	transform: scale(1.2);
+	opacity: 1;
+}
